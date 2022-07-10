@@ -9,6 +9,7 @@ class AppText {
   static const String rememberMe = "Remember Me";
   static const String forgotPassword = "Forgot Password";
   static const String account = "Don't have an account?";
+  static const String already = "Already have an account?";
   static const String registernow = "Register Now";
   static const String loginwith = "Log in with";
   static const String or = "OR";
