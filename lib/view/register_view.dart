@@ -21,63 +21,80 @@ class RegisterView extends StatelessWidget {
     return SizedBox(
       height: context.height * 1,
       width: context.width * 1,
-      child: Column(
-        children: [
-          context.emptySizedHeightBoxLow3x,
-          topImage(context),
-          context.emptySizedHeightBoxLow3x,
-          topText(context),
-          context.emptySizedHeightBoxLow3x,
-          CustomTextField(
-            height: context.height * 0.07,
-            width: context.width * 0.8,
-            hinttext: AppText.firstName,
-            prefixIcon: const Icon(Icons.person),
-          ),
-          context.emptySizedHeightBoxLow,
-          CustomTextField(
-            height: context.height * 0.07,
-            width: context.width * 0.8,
-            hinttext: AppText.lastName,
-            prefixIcon: const Icon(Icons.person),
-          ),
-          context.emptySizedHeightBoxLow,
-          CustomTextField(
-            height: context.height * 0.07,
-            width: context.width * 0.8,
-            hinttext: AppText.email,
-            prefixIcon: const Icon(Icons.email),
-          ),
-          context.emptySizedHeightBoxLow,
-          CustomTextField(
-            height: context.height * 0.07,
-            width: context.width * 0.8,
-            hinttext: AppText.password,
-            prefixIcon: const Icon(Icons.lock),
-            suffixIcon: const Icon(Icons.remove_red_eye),
-          ),
-          context.emptySizedHeightBoxLow,
-          CustomTextField(
-            height: context.height * 0.07,
-            width: context.width * 0.8,
-            hinttext: AppText.confirm,
-            prefixIcon: const Icon(Icons.lock),
-            suffixIcon: const Icon(Icons.remove_red_eye),
-          ),
-          context.emptySizedHeightBoxLow3x,
-          CustomElevatedButton(
-            child: Text(
-              AppText.signUp.toUpperCase(),
-              style: const TextStyle(color: Colors.white),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            context.emptySizedHeightBoxLow3x,
+            topImage(context),
+            context.emptySizedHeightBoxLow3x,
+            topText(context),
+            context.emptySizedHeightBoxLow3x,
+            CustomTextField(
+              height: context.height * 0.07,
+              width: context.width * 0.8,
+              hinttext: AppText.firstName,
+              prefixIcon: const Icon(
+                Icons.person,
+                color: AppColors.loginColor,
+              ),
             ),
-            borderRadius: 20,
-            color: AppColors.loginColor,
-            height: context.height * 0.07,
-            width: context.width * 0.6,
-          ),
-          context.emptySizedHeightBoxLow3x,
-          bottomText(context),
-        ],
+            context.emptySizedHeightBoxLow,
+            CustomTextField(
+              height: context.height * 0.07,
+              width: context.width * 0.8,
+              hinttext: AppText.lastName,
+              prefixIcon: const Icon(
+                Icons.person,
+                color: AppColors.loginColor,
+              ),
+            ),
+            context.emptySizedHeightBoxLow,
+            CustomTextField(
+              height: context.height * 0.07,
+              width: context.width * 0.8,
+              hinttext: AppText.email,
+              prefixIcon: const Icon(
+                Icons.email,
+                color: AppColors.loginColor,
+              ),
+            ),
+            context.emptySizedHeightBoxLow,
+            CustomTextField(
+              height: context.height * 0.07,
+              width: context.width * 0.8,
+              hinttext: AppText.password,
+              prefixIcon: const Icon(
+                Icons.lock,
+                color: AppColors.loginColor,
+              ),
+              suffixIcon: const Icon(Icons.remove_red_eye),
+            ),
+            context.emptySizedHeightBoxLow,
+            CustomTextField(
+              height: context.height * 0.07,
+              width: context.width * 0.8,
+              hinttext: AppText.confirm,
+              prefixIcon: const Icon(
+                Icons.lock,
+                color: AppColors.loginColor,
+              ),
+              suffixIcon: const Icon(Icons.remove_red_eye),
+            ),
+            context.emptySizedHeightBoxLow3x,
+            CustomElevatedButton(
+              child: Text(
+                AppText.signUp.toUpperCase(),
+                style: const TextStyle(color: Colors.white),
+              ),
+              borderRadius: 20,
+              color: AppColors.loginColor,
+              height: context.height * 0.07,
+              width: context.width * 0.6,
+            ),
+            context.emptySizedHeightBoxLow3x,
+            bottomText(context),
+          ],
+        ),
       ),
     );
   }
