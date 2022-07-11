@@ -27,7 +27,6 @@ class LoginView extends StatelessWidget {
           context.emptySizedHeightBoxLow3x,
           topText(context),
           context.emptySizedHeightBoxLow3x,
-          //
           CustomTextField(
             height: context.height * 0.07,
             width: context.width * 0.8,
@@ -132,10 +131,12 @@ class LoginView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text("Dont have an account?"),
+          const Text(
+            AppText.account,
+          ),
           TextButton(
             child: const Text(
-              "Register now",
+              AppText.registernow,
               style: TextStyle(color: AppColors.loginColor),
             ),
             onPressed: () {
