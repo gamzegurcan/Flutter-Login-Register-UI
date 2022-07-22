@@ -30,14 +30,17 @@ Project Run
 ```bash
   flutter run
 ```
+## Project ScreenShots
+
 <table>
   <tr>
-    <td>Project ScreenShots</td>
+    <td>Login Page</td>
+    <td>Register Page</td>
   </tr>
 
   <tr>
-    <td><img src="github/login_view.png" width=270 height=480></td>
-    <td><img src="github/register_view.png" width=270 height=480></td>
+    <td><img src="github/login_view.png" width=270 height=500></td>
+    <td><img src="github/register_view.png" width=270 height=500></td>
   </tr>  
 
 </table>
